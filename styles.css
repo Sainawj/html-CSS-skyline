@@ -361,15 +361,19 @@ body {
   font-size: 18px;
   padding: 8px 16px;
   cursor: pointer;
+  background-color: transparent; /* Optional: to make sure the button inherits the transparent background */
 }
 
-/* Dropdown content (hidden by default) */
+/* Dropdown content (initially hidden) */
 .dropdown-content {
   display: none;
   position: absolute;
+  top: 100%; /* Ensures it appears below the button */
+  left: 50%;  /* Align center */
+  transform: translateX(-50%); /* Center the dropdown content */
   background-color: rgba(0, 0, 255, 0.5); /* Blue transparent background */
   min-width: 160px;
-  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
   text-align: left;
 }

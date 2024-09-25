@@ -314,20 +314,23 @@ body {
       );
   }
 }
+
 .top-menu {
-  position: fixed;
+  position: absolute;
   top: 0;
-  width: 100%;
-  background-color: #333;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 255, 0.5); /* Blue with 50% transparency */
   padding: 10px;
   z-index: 1000;
+  width: 100%;
+  text-align: center;
 }
 
 .top-menu ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  text-align: center;
 }
 
 .top-menu ul li {
@@ -344,4 +347,5 @@ body {
 .top-menu ul li a:hover {
   text-decoration: underline;
 }
+
 
